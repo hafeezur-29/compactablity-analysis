@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CloudCompat</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header><div class="brand">Cloud<span>Compat</span></div><div class="tag">Cloud Compatibility Intelligence</div></header>
+<main>
+  <section class="hero">
+    <p class="eyebrow">CLOUD READINESS ANALYSIS</p>
+    <h1>Will your app run well in the cloud?</h1>
+    <p class="sub">Analyze a website, estimate its resource requirements and match it with a cloud profile.</p>
+    <div class="search">
+      <input id="url" placeholder="https://example.com">
+      <button onclick="analyze()">Analyze</button>
+    </div>
+  </section>
+
+  <section id="result" class="hidden">
+    <div id="summary" class="grid"></div>
+    <div class="panel">
+      <h2>Cloud compatibility</h2>
+      <div id="machines" class="machines"></div>
+    </div>
+  </section>
+</main>
+<footer>CloudCompat • Lightweight cloud readiness testing</footer>
+<script src="/static/app.js"></script>
+</body>
+</html>
